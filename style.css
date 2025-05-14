@@ -8,12 +8,15 @@ body, html {
   padding: 0;
   overflow-x: hidden;
 }
+
+
 .hero-section {
   min-height: 100vh;
   background: url("roung.png") no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .second-section {
@@ -33,6 +36,8 @@ body, html {
   gap: 40px;
   justify-content: center;
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .first{
@@ -51,8 +56,7 @@ body, html {
 
 .left-panel, .right-panel {
   flex: 1;
-overflow-x: hidden;
-
+  padding: 20px;
 }
 
 .left-panel h1 {
@@ -144,6 +148,12 @@ overflow-x: hidden;
   border-radius: 5px;
   width: 30%;
   text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; 
+  justify-content: center;
+
+
 }
 
 .payment-icon {
@@ -156,6 +166,7 @@ overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .card {
@@ -397,7 +408,7 @@ margin-left: 50px;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
     flex-direction: column;
     padding: 10px;
