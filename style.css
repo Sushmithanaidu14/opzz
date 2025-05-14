@@ -415,13 +415,10 @@ margin-left: 50px;
     padding: 10px;
   }
   
- .left-panel {
+  .left-panel, .right-panel {
     width: 100%;
-    padding: 90px;
- }
- .right-panel-container{
-width:100%;
-padding:80px;
+    padding: 80px;
+  }
 
 
 
