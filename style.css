@@ -3,6 +3,12 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 .hero-section {
   min-height: 100vh;
@@ -10,10 +16,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .second-section {
-  background-color: #0d0e1a;
+  background-color: #070b0e;
   padding: 80px 40px;
  
   color: white;
@@ -29,6 +36,9 @@ body {
   gap: 40px;
   justify-content: center;
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .first{
@@ -47,6 +57,7 @@ body {
 
 .left-panel, .right-panel {
   flex: 1;
+  padding: 20px;
 }
 
 .left-panel h1 {
@@ -138,6 +149,12 @@ body {
   border-radius: 5px;
   width: 30%;
   text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; 
+  justify-content: center;
+
+
 }
 
 .payment-icon {
@@ -150,6 +167,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .card {
@@ -391,15 +409,22 @@ margin-left: 50px;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .container {
     flex-direction: column;
     padding: 10px;
   }
   
-  .left-panel, .right-panel {
+  .left-panel{
+ width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  } 
+  .right-panel-container {
     width: 100%;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   .bi {
@@ -417,7 +442,7 @@ margin-left: 50px;
     
   }
   .hi{
-    padding-left: 200px;
+    padding-left: 90px;
   }
  
 
