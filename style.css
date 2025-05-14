@@ -407,7 +407,27 @@ margin-left: 50px;
 .me{
   padding-left: 100px;
 }
+.buttons button:hover {
+  background-color: rgb(139, 136, 203);
+  color: black;
+  border-color: rgb(139, 136, 203);
+}
 
+.payment-method:hover {
+  background-color: rgb(139, 136, 203);
+  color: black;
+  border-color: rgb(139, 136, 203);
+}
+
+.wallet-btn:hover {
+  background-color: rgb(139, 136, 203);
+  color: black;
+}
+
+.stage-bonus:hover {
+  background-color: rgb(139, 136, 203);
+  color: black;
+}
 
 @media (max-width: 600px) {
   .container {
