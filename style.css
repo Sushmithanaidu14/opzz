@@ -31,7 +31,7 @@ body, html {
 .container {
   display: flex;
   min-height: 100vh;
-  padding: 0px 20px;
+  padding: 60px 40px;
   align-items: center;
   gap: 40px;
   justify-content: center;
@@ -411,7 +411,7 @@ margin-left: 50px;
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
-    padding:0 20px;
+    padding: 10px;
   }
   
   .left-panel, .right-panel {
@@ -478,4 +478,3 @@ padding-left: 20px;
   }
 
 }
-
