@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,8 +5,8 @@ body {
 }
 
 .hero-section {
-  height: 100vh;
-  background: url("roung.png") no-repeat ;
+  min-height: 100vh;
+  background: url("roung.png") no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,32 +15,35 @@ body {
 .second-section {
   background-color: #0d0e1a;
   padding: 80px 40px;
-  min-height: 100vh;
+ 
   color: white;
+  overflow: auto;
+
 }
 
 .container {
-
   display: flex;
   min-height: 100vh;
   padding: 60px 40px;
-align-items: center;
+  align-items: center;
   gap: 40px;
   justify-content: center;
   width: 100%;
 }
+
 .first{
-   font-size: large;
-   font-weight: bold;
+  font-size: large;
+  font-weight: bold;
 }
+
 .sec{
   font-size: 2.0rem;
 }
+
 .font{
   font-weight: lighter;
   color: rgb(131, 135, 171);
 }
-
 
 .left-panel, .right-panel {
   flex: 1;
@@ -50,53 +52,49 @@ align-items: center;
 .left-panel h1 {
   font-size: 2.0rem;
   line-height: 1.4;
-  
 }
 
 .ai {
   color: #613be6;
   font-size: 2.0rem;
-  
 }
+
 .aii {
   color: #613be6;
   font-weight: bold;
 }
-.custom-line {
 
+.custom-line {
   border: none;
   height: 2px;
-  background: linear-gradient(rgb(131, 135, 171)); 
+  background: linear-gradient(rgb(131, 135, 171));
   margin: 1rem 0;
-  width: 65%;
- 
-  
+  width: 100%;
 }
+
 .bi{
   padding-left: 100px;
 }
+
 .text{
   color: #bbadef;
 }
+
 .box{
- 
   padding: 12px;
-  
-  
-  }
+}
 
 .countdown {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin: 20px 0;
   padding-left: 30px;
+  justify-content: center;
 }
 
 .hii{
   padding-left: 150px;
 }
-
-
 
 .countdown span {
   font-size: 1.6rem;
@@ -116,10 +114,9 @@ align-items: center;
 
 .buttons button {
   margin-right: 10px;
-
-  background:none;
-  border-style:ridge;
-  border-color:blue;
+  background: none;
+  border-style: ridge;
+  border-color: blue;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -127,11 +124,32 @@ align-items: center;
   padding: 2%;
 }
 
+.payment-methods {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-method {
+  background: none;
+  border: 1px solid rgb(25, 25, 219);
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  width: 30%;
+  text-align: center;
+}
+
+.payment-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
 .right-panel {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .card {
@@ -139,7 +157,6 @@ align-items: center;
   border-radius: 10px;
   padding: 30px;
   width: 100%;
-
   backdrop-filter: blur(7px);
   box-shadow: 0 0 50px rgba(8, 8, 239, 0.3);
 }
@@ -150,9 +167,13 @@ align-items: center;
 }
 
 .card p {
-
   text-align: center;
 }
+
+
+
+
+
 .right-card-container {
   display: flex;
   justify-content: center;
@@ -169,8 +190,6 @@ align-items: center;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
   font-family: 'Poppins', sans-serif;
 }
-
-
 
 .progress-bar-container {
   margin-bottom: 20px;
@@ -195,15 +214,10 @@ align-items: center;
   background: #3f48fd;
   height: 100%;
   transition: width 0.3s;
- 
 }
 
-
-
-
-
 .token-card {
-  background:white;
+  background: white;
   border-radius: 8px;
   padding: 10px;
   display: flex;
@@ -213,7 +227,7 @@ align-items: center;
 }
 
 .token-left {
-  color:rgb(91, 88, 102);
+  color: rgb(91, 88, 102);
 }
 
 .balance {
@@ -229,7 +243,6 @@ align-items: center;
   font-size: 1rem;
   font-weight: 600;
   color: rgb(91, 88, 102);
-
 }
 
 .receive-text {
@@ -239,15 +252,14 @@ align-items: center;
 
 .token-right {
   background: rgb(220, 218, 228);
-  color:black;
- height: 30px;
-  border-radius:4px;
+  color: black;
+  height: 30px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 6px;
   font-weight: 600;
   width: 100px;
-
 }
 
 .wallet-btn {
@@ -263,10 +275,8 @@ align-items: center;
   cursor: pointer;
 }
 
-
 .rate-box {
   margin-bottom: 20px;
-
 }
 
 .rate-row {
@@ -275,16 +285,14 @@ align-items: center;
   align-items: center;
 }
 
-
-
 .stage-bonus {
-  background: white;
-  color: #000;
-  border: none;
-  padding: 6px 20px;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  white-space: nowrap;
+background: white;
+color: #000;
+border: none;
+padding: 6px 10px;
+border-radius: 10px;
+font-size: 0.9rem;
+white-space: nowrap;
 }
 
 .rate-label {
@@ -294,16 +302,17 @@ align-items: center;
   margin-top: 10px;
   margin: 0;
 }
+
 .hi{
-  padding-left: 100px;
+  padding-left: 60%;
   padding-top: 9px;
 }
+
 .eth{
   width:30px;
   height: 20px;
   padding: 2px;
   padding-left: 10px;
- 
 }
 
 .bth{
@@ -311,70 +320,145 @@ align-items: center;
   height: 20px;
   padding: 2px;
   padding-left: 10px;
-
- 
 }
 
-.second-section{
-  height: 100vh;
-  
-  background-color: #070b0e;
 
- 
- 
-}
 
 .one, .three, .two {
   flex: 1;
+ 
 }
 
 .pie{
   width: 100%;
   height: 50%;
 }
+
 .uh{
   font-size: large;
   color: yellow;
+  display: flex;
+  flex-direction: row;
+  
 }
-    .donut {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: #333;
-      background-image: conic-gradient(
-        var(--segment-color) var(--segment-percent),
-        #333 var(--segment-percent)
-      );
-      position: relative;
-      margin: auto;
-    }
+.donut {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #333;
+  background-image: conic-gradient(
+    var(--segment-color) var(--segment-percent),
+    #333 var(--segment-percent)
+  );
+  position: relative;
+margin-left: 50px;
+}
 
-    .donut::after {
-      content: "";
-      width: 55px;
-      height: 55px;
-      background-color: #0d0d0d;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+.donut::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  background-color: #0d0d0d;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    .label {
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-top: 10px;
+.label {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
 
-    }
+.pink {
+ color: #ff00ff;
+ }
+.red { 
+  color: red;
+}
+.yellow { 
+  color: yellow;
+ }
+.green{
+  color:greenyellow;
+}
 
-    .pink { color: #ff00ff; }
-    .red { color: red; }
-    .yellow { color: yellow; }
+.me{
+  padding-left: 100px;
+}
 
-    .me{
-      padding-left: 100px;
-     
-    }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .left-panel, .right-panel {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .bi {
+    padding-left: 0;
+  }
+  
+  .countdown {
+    padding-left: 0;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .hii {
+    justify-content: center;
+    
+  }
+  .hi{
+    padding-left: 200px;
+  }
+ 
+
+
+
+  .stage-bonus{
+padding-left: 20px;
+
+  }
+  
+  .one, .three, .two {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .pie {
+    width: 90%;
+    height: auto;
+  }
+
+  
+  .second-section .d-flex {
+    flex-direction: column;
+  }
+
+
+  .three .d-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+  .donut {
+    
+    width: 100px;
+    height: 100px;
+  }
+  .label {
+    font-size: 1.2rem;
+  }
+  .fw-bold {
+    font-size: 20px;
+  }
+
+}
 
