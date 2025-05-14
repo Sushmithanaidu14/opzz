@@ -51,6 +51,8 @@ body, html {
 
 .left-panel, .right-panel {
   flex: 1;
+overflow-x: hidden;
+
 }
 
 .left-panel h1 {
