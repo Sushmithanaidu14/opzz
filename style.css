@@ -415,7 +415,11 @@ margin-left: 50px;
     padding: 10px;
   }
   
-  .left-panel, .right-panel {
+    .left-panel  {
+    width: 100%;
+    padding: 80px;
+  }
+  .right-panel  {
     width: 100%;
     padding: 80px;
   }
