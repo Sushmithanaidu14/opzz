@@ -38,8 +38,7 @@ body, html {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-box-sizing: border-box;
-
+ 
 }
 
 .first{
@@ -193,7 +192,7 @@ box-sizing: border-box;
 
 
 
-.right-card-container {
+.right-panel-container {
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -414,14 +413,13 @@ margin-left: 50px;
   .container {
     flex-direction: column;
     padding: 10px;
-box-sizing: border-box;
-
   }
   
   .left-panel, .right-panel {
     width: 100%;
-    padding: 20px;
+    padding: 80px;
   }
+  
   
   .bi {
     padding-left: 0;
